@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper SYSTEM "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mall.mapper.MallMarkMapper">
+
+	<select id="getMallMarkByFirstClassId" resultType="mallMark">
+		select * from t_mall_trade_mark mark 
+			left join t_mall_tm_class tm on mark.id = tm.pp_id
+				left join t_mall_class_1 class1 on tm.flbh1 = class1.id
+	</select>
+
+</mapper>

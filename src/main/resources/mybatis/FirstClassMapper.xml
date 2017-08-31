@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper SYSTEM "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mall.mapper.FirstClassMapper">
+
+	<select id="getAllFirstIds" resultType="int">
+		select id from t_mall_class_1;
+	</select>
+	
+	<select id="getAllFirstClass" resultType="firstClass">
+		select * from t_mall_class_1;
+	</select>
+
+</mapper>
